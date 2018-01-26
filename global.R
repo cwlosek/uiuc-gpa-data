@@ -1,6 +1,6 @@
 # Grade Distribution File
 
-fs1517 = read.csv("https://www.dropbox.com/s/9tdukopjly2up2z/GPA%20DATA_fs1517.csv?raw=1")
+fs1517 = read.csv("https://www.dropbox.com/s/axnlm3phvws023x/GPA%20DATA_fs1617.csv?raw=1")
 fs1517 = fs1517[,-1]
 
 colnames(fs1517)[3:16] = c("Course Title",
@@ -14,7 +14,7 @@ fs1517$`Course Title` = as.character(fs1517$`Course Title`)
 
 # Professor Data File
 
-fs1517_prof = read.csv("https://www.dropbox.com/s/rm6ey6k6z7wd9ts/GPA%20DATA_fs1517_prof.csv?raw=1")
+fs1517_prof = read.csv("https://www.dropbox.com/s/lh7c4w4dsmwxyhr/GPA%20DATA_fs1617_prof.csv?raw=1")
 fs1517_prof = fs1517_prof[,-1]
 
 colnames(fs1517_prof)[3:17] = c("Course Title", "Primary Instructor",
