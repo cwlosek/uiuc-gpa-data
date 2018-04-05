@@ -91,7 +91,7 @@ shinyServer(function(input, output, session) {
         paste("Overall Course GPA:", 
               format(fs1517$GPA[fs1517$Subject == input$Subject & 
                            fs1517$Course == input$Course & 
-                           fs1517$`Course Title` == input$Title], 2),
+                           fs1517$`Course Title` == input$Title], nsmall = 2),
               "|",
               "Percentage of 4.00\'s Given:",
               paste0(fs1517$PerctFour[fs1517$Subject == input$Subject & 
